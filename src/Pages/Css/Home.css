@@ -1,0 +1,16 @@
+html, body {
+    margin: 0;               /* Remove default margin */
+    padding: 0;              /* Remove default padding */
+    height: 100%;            /* Full height */
+    overflow: hidden;        /* Prevent scrolling */
+  }
+  
+  .home-container {
+    width: 100vw;            /* Full width */
+    height: 100vh;           /* Full height */
+    background-size: cover;  /* Cover the entire area */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat; /* Don't repeat the image */
+    position: relative;      /* Positioning context */
+  }
+  
