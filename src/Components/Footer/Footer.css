@@ -1,0 +1,100 @@
+.footer hr {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #f3cc4c;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #ea8a4e;
+    position: relative; /* Ensure position is set for z-index to work */
+    z-index: 50; /* Set a higher value */
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #383838;
+    font-size: 46px;
+    font-weight: 700;
+}
+.footer-logo img {
+    height: 150px;
+}
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 20px;
+}
+.footer-links li {
+    cursor: pointer;
+}
+.footer-social-icon {
+    display: flex;
+    gap: 20px;
+}
+.footer-icon-container {
+    padding: 0; /* Remove padding */
+    background: transparent; /* Remove background */
+    border: none; /* Remove border if not needed */
+}
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+.footer-copyright hr {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #f3cc4c;
+}
+.footer-links a {
+    text-decoration: none; /* Remove underline */
+    color: #252525; /* Link color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+.footer-links a:hover {
+    color: #f3cc4c; /* Color on hover */
+}
+.footer .social2{
+    text-align: center;
+    padding-bottom: center;
+    color: var(--main-color);
+    display: flex;
+  }
+  .footer .social2 a{
+    font-size: 25px;
+    color: red;
+    border: 2px solid #f3cc4c;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    transition: 0.3 ease-in-out;
+    background-color: black;
+  }
+  .footer .social2 a:hover{
+    transform:scale(1.2)translateY(-10px);
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25 var(--main-color);
+  }
+  

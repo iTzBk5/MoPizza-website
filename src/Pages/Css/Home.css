@@ -1,17 +1,8 @@
 
 html, body {
     margin: 0;            
-    padding: 0;             
-    height: 100%;            
+    padding: 0;              
     overflow-x: hidden;        
-  }
-  
-  .home-container {
-    width: 100vw;          
-    height: 100vh;      
-    background-position: center;  
-    background-repeat: no-repeat; 
-    background-size: cover;
-    position: relative;    
+    
   }
   

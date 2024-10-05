@@ -1,31 +1,28 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import ModelViewer from '../Components/Model/Model.jsx';
-import backgroundImage from '../Components/Assets/MoPizza-background.png'; // Adjust the path
-import './Css/Home.css';
+import ZoomOnScroll from '@/Components/ZoomOnScroll/ZoomOnScroll.jsx';
 import { Hero } from '@/Components/Hero/Hero.jsx';
-import Navbar from '@/Components/Navbar/Navbar.jsx';
-
+import '../Pages/Css/Home.css';
 export const Home = () => {
+  const modelRef = useRef(null); // Reference for the ModelViewer
+
   return (
-    <div className="relative min-h-screen flex flex-col">
-      {/* Navbar */}
-      <Navbar />
+    <div className="relative min-h-screen flex flex-col ">
 
       {/* Hero Section */}
-      <Hero />
-
+      <div>
+        <Hero />
+      </div>
       {/* 3D Model Viewer */}
-      <div className="absolute">
+      <div className="fixed z-30 " >
         <ModelViewer />
       </div>
 
-      {/* Background image container */}
-      <div
-        className=" home-container "
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-        }}
-      />
+      {/* ZoomOnScroll Component */}
+      <div className='relative   '>
+        <ZoomOnScroll />
+      </div>
+      
     </div>
   );
 };
