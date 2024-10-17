@@ -36,7 +36,7 @@ const Model = ({ isMobile }) => {
       scrollTrigger: {
         trigger: ".model-container", // Target the model container for scroll
         start: "top top",  // Start from the top of the viewport
-        end: "bottom+=3000 top",  // End the animation at 3000px scroll
+        end: "bottom+=3500 top",  // End the animation at 3000px scroll
         scrub: 1,  // Smooth transition as the user scrolls
         pin: true, // Pin the canvas in place during the scroll
       },

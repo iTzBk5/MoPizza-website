@@ -1,9 +1,9 @@
 .footer hr {
-    width: 100%;
+    width: 80%;
     border: none;
     border-radius: 10px;
     height: 3px;
-    background: #f3cc4c;
+    background: #f3cc4c; 
 }
 .footer {
     display: flex;
@@ -56,7 +56,7 @@
     font-size: 20px;
 }
 .footer-copyright hr {
-    width: 100%;
+    width: 60%;
     border: none;
     border-radius: 10px;
     height: 3px;

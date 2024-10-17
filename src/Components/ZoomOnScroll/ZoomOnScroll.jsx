@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import backgroundImage from '../Assets/New_Project-ai-brush-removebg-z1gd0twg.png';
 import moPizzaBackground from '../Assets/MENU-mopizza-newx-1.png';
 import moPizzaBackground2 from '../Assets/MENU-mopizza-newx-2.png';
+import Background1 from '../Assets/vecteezy_pattern-of-hand-drawn-pizza-isolated-on-dark-and-bright_12803916.jpg';
 import cherry from '../Assets/cherry.png';
 import chilli1 from '../Assets/chilli-1.png';
 import chilli2 from '../Assets/chilli-2.png';
@@ -115,9 +116,10 @@ const ZoomOnScroll = () => {
         className="absolute inset-0   z-9"
         style={{
           backgroundColor: '#ea8a4e',
-          backgroundSize: '100% 100%',
-          backgroundPosition: '50% 50%',
-          backgroundRepeat:'no-repeat'
+          backgroundImage: `url(${Background1})`,
+          backgroundBlendMode: 'multiply',
+          backgroundSize: '40% 30%',
+          backgroundPosition: '100% 0%',
         }}
       />
       <div
