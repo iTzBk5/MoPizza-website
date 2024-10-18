@@ -1,5 +1,5 @@
 import React from 'react';
-import mainLogo from '../Assets/main-logo.png'; 
+import mainLogo from '../Assets/main-logo.png';
 
 export const Hero = () => {
     return (
@@ -27,7 +27,17 @@ export const Hero = () => {
                         <h1 className="text-3xl font-bold mb-2 sm:text-4xl">Welcome to Mo Pizza</h1>
                         <p className="text-lg sm:text-xl">Delicious pizzas made with love!</p>
                     </div>
+                    
                 </div>
+                <div className="buttons flex justify-start ml-[65px] sm:ml-[260px] mt-4 z-50">
+                    <button className="z-50 bg-[#fbca1f] font-bold text-lg sm:text-xl font-inherit px-6 py-3 border-2 border-black rounded-md shadow-md transition-transform duration-100 ease-in-out hover:translate-x-[-0.1rem] hover:translate-y-[-0.1rem] hover:shadow-lg active:translate-x-[0.1rem] active:translate-y-[0.1rem] active:shadow-sm ml-5">
+                        Franchise
+                    </button>
+                    <button className="z-50 bg-[#ffffff] font-bold text-lg sm:text-xl font-inherit px-6 py-3 border-1 border-black rounded-md shadow-md transition-transform duration-100 ease-in-out hover:translate-x-[-0.1rem] hover:translate-y-[-0.1rem] hover:shadow-lg active:translate-x-[0.1rem] active:translate-y-[0.1rem] active:shadow-sm ml-5">
+                        Game
+                    </button>
+                </div>
+   
                 
         </div>
     );
