@@ -44,14 +44,14 @@ const Model = ({ isMobile }) => {
 
     // 0 to 1000px scroll
     scrollAnimations.to(gltf.scene.position, {
-      x: isMobile ? 0 : 15,
-      y: isMobile ? 0 : 0.5,
+      x: isMobile ? 1 : 15,
+      y: isMobile ? 4 : 0.5,
       z: isMobile ? 0 : 2,
       duration: 1,
     }).to(gltf.scene.scale, {
-      x: 2,
-      y: 2,
-      z: 2,
+      x:isMobile ?1 :2,
+      y: isMobile ?1 :2,
+      z: isMobile ?1 :2,
       duration: 1,
     }).to(gltf.scene.rotation, {
       x: 0,
@@ -112,7 +112,7 @@ const Model = ({ isMobile }) => {
     <primitive
       object={gltf.scene}
       scale={isMobile ? 1 : 2}
-      position={isMobile ? [-5, 2, 1] : [2, 1, 2]}
+      position={isMobile ? [-4.2, 0.8, 1] : [2, 1, 2]}
     />
   );
 };
