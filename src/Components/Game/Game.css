@@ -1,10 +1,14 @@
 /* Game.css */
-
+.App{
+  padding-top: 100px;
+}
 .pizza-container {
     position: relative;
     width: 300px;
     height: 300px;
     margin: 0 auto;
+    margin-bottom: 100px;
+    bottom: 20px;
   }
   
   .pizza {
@@ -26,7 +30,7 @@
     height: 400px;
     position: relative;
   }
-  .topping-image {
+  .topping-image { 
     position: absolute;
     width: 90%;
     height: 90%;
@@ -87,7 +91,6 @@
   .ingredients {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
   
   .ingredient {
@@ -122,4 +125,61 @@
     padding-top: 80px;
   }
   /* Other styles remain the same */
-  
+
+
+  /* Common Styles for Input, Select, and Title */
+.title__container {
+  position: relative;
+  background: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start; /* You can change this to center or space-between if needed */
+  align-items: center;
+  gap: 15px;
+  border: 4px solid #000;
+  max-width: 350px;
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+  transform: rotateX(10deg) rotateY(-10deg);
+  perspective: 1000px;
+  box-shadow: 10px 10px 0 #000;
+  margin: auto; /* Add this line to center horizontally */
+  margin-bottom: 30px;
+}
+
+.title__container:hover {
+  transform: rotateX(5deg) rotateY(1deg) scale(1.05);
+  box-shadow: 25px 25px 0 -5px #e9b50b, 25px 25px 0 0 #000;
+}
+
+/* Shadow for Input, Select, and Title */
+.shadow__input {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: translateZ(-50px);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 107, 107, 0.4) 0%,
+    rgba(255, 107, 107, 0.1) 100%
+  );
+  filter: blur(20px);
+}
+
+/* Styles for H1 Title */
+.input__title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #000;
+  text-transform: uppercase;
+  transform: translateZ(10px);
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  z-index: 3;
+  font-family: "Roboto", Arial, sans-serif;
+}

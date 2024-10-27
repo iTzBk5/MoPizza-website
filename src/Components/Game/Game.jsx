@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Game.css';
-
+import backgroundImage from '../Assets/MoPizza-background.png';
 // Import topping images
 import pizzaBase from '../Assets/EmptypPizza-Photoroom.png';
 import tomatoSauceImg from '../Assets/TomatoSoauce-Photoroom.png';
@@ -155,31 +155,45 @@ function Game() {
   
 
   return (
-    <div className="App">
-      <h1>Pizza Game</h1>
-      <div className="game-info">
-        <h2>Time Left: {timeLeft} seconds</h2>
-        <h2>Score: {score}</h2>
-      </div>
+    <div className="App"
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: '100% 150%',
+      backgroundPosition: '100% 50%',
+      height: '100%',
+      minHeight: '170vh',
 
+    }}>
+      <div className="title__container">
+        <h1 className="input__title">MoPizza Game</h1>
+      </div>
+      <div className="title__container">
+        
+        <div className="game-info">
+          <h2 className="input__title">Time Left: {timeLeft} seconds</h2>
+          <h2 className="input__title">Score: {score}</h2>
+        </div>
+      </div>
       {!gameStarted ? (
         <div className="start-screen">
-          <h2>Welcome to the Pizza Game!</h2>
-          <button className="start-button" onClick={startGame}>
+          <div className="title__container">
+          <button className="input__title"onClick={startGame}>
             Start Game
           </button>
+          </div>
         </div>
       ) : (
         <>
           {gameOver ? (
-            <div>
-              <h2>Game Over! Final Score: {score}</h2>
-              <button className="restart-button" onClick={initializeGame}>
+            <div className="title__container"> 
+              <h2 className="input__title">Game Over! Final Score: {score}</h2>
+              <button className="input__title" onClick={initializeGame}>
                 Restart Game
               </button>
             </div>
           ) : (
             <div className="game-area">
+              <div className="title__container">
               <div className="ingredients">
                 <h3>Ingredients</h3>
                 {ingredients.map((ingredient) => (
@@ -195,7 +209,7 @@ function Game() {
                   </div>
                 ))}
               </div>
-
+              </div>
               <div className="pizza-container">
                 <div
                   className="pizza"
@@ -219,7 +233,8 @@ function Game() {
               </div>
 
               <div className="order">
-                <h3>Current Order:</h3>
+                <div className="title__container"> 
+                <h3  >Current Order:</h3>
                 <ul>
                   {order.map((ingredient, index) => (
                     <li key={index}>
@@ -229,10 +244,11 @@ function Game() {
                   ))}
                 </ul>
               </div>
-
-              <button className="confirm-button" onClick={handleConfirmOrder}>
+              <div className="title__container"> 
+              <button className="input__title" onClick={handleConfirmOrder}>
                 Confirm Order
               </button>
+              </div></div>
             </div>
           )}
         </>

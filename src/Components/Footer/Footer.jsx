@@ -14,13 +14,13 @@ export const Footer = () => {
       </div>
       <ul className='footer-links'>
         <li>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#">Franchise</a>
+          <a href="/franchise">Franchise</a>
         </li>
         <li>
-          <a href="#">Game</a>
+          <a href="/game">Game</a>
         </li>
       </ul>
       
