@@ -14,7 +14,7 @@ export const Home = () => {
         <Hero />
       </div>
       {/* 3D Model Viewer */}
-      <div className="fixed z-30 " >
+      <div className="fixed inset-0 z-30 " >
         <ModelViewer />
       </div>
 

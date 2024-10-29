@@ -44,14 +44,14 @@ const Model = ({ isMobile }) => {
 
     // 0 to 1000px scroll
     scrollAnimations.to(gltf.scene.position, {
-      x: isMobile ? 1 : 15,
-      y: isMobile ? 4 : 0.5,
+      x: isMobile ? 4 : 5,
+      y: isMobile ? 3 : 2,
       z: isMobile ? 0 : 2,
       duration: 1,
     }).to(gltf.scene.scale, {
-      x:isMobile ?1 :2,
-      y: isMobile ?1 :2,
-      z: isMobile ?1 :2,
+      x:isMobile ?1 :1.5,
+      y: isMobile ?1 :1.5,
+      z: isMobile ?1 :1.5,
       duration: 1,
     }).to(gltf.scene.rotation, {
       x: 0,
@@ -62,14 +62,14 @@ const Model = ({ isMobile }) => {
 
     // 1000 to 2000px scroll - Open Bone3 here
     scrollAnimations.to(gltf.scene.position, {
-      x: isMobile ? -3 : 1,
-      y: isMobile ? 2 : 2,
-      z: isMobile ? 1 : 3,
+      x: isMobile ? -1.5 : -4,
+      y: isMobile ? 2 : 4,
+      z: isMobile ? 1 : 2,
       duration: 1,
     }, "0.6").to(gltf.scene.scale, {
-      x: isMobile ? 0.8 : 1.5,
-      y: isMobile ? 0.8 : 1.5,
-      z: isMobile ? 0.8 : 1.5,
+      x: isMobile ? 0.5 : 1,
+      y: isMobile ? 0.5 : 1,
+      z: isMobile ? 0.5 : 1,
       duration: 1,
     }, "0.6").to(gltf.scene.rotation, {
       x: Math.PI / 60,  // Rotate slightly
@@ -85,21 +85,26 @@ const Model = ({ isMobile }) => {
 
     // > 2000px scroll
     scrollAnimations.to(gltf.scene.position, {
-      x: isMobile ? -5 : -6,
-      y: isMobile ? 3 : 4,
+      x: isMobile ? -5 : -9,
+      y: isMobile ? 3 : 4.5,
       z: isMobile ? 2 : 0,
       duration: 1,
+    }, "2.8").to(gltf.scene.position, {
+      x: isMobile ? -1.5 : -9,
+      y: isMobile ? 2 : 4.5,
+      z: isMobile ? 1 : 0,
+      duration: 1,
     }, "1.8").to(gltf.scene.scale, {
-      x: isMobile ? 0.6 : 1.2,
-      y: isMobile ? 0.6 : 1.2,
-      z: isMobile ? 0.6 : 1.2,
+      x: isMobile ? 0.5 : 1,
+      y: isMobile ? 0.5 : 1,
+      z: isMobile ? 0.5 : 1,
       duration: 1,
     }, "1.8").to(gltf.scene.rotation, {
-      x: Math.PI / 100,  // Rotate slightly
-      y: Math.PI / 2,
       z: Math.PI / 100,
-      duration: 1,
-    }, ">");
+      x: Math.PI / 100,
+      y: Math.PI / 1.5,
+      duration: 1.5,
+    }, ">")
 
   }, [gltf, isMobile]);
 
@@ -111,8 +116,8 @@ const Model = ({ isMobile }) => {
   return (
     <primitive
       object={gltf.scene}
-      scale={isMobile ? 1 : 2}
-      position={isMobile ? [-4.2, 0.8, 1] : [2, 1, 2]}
+      scale={isMobile ? 0.9 : 1.6}
+      position={isMobile ? [-2.5, 0, 1] : [-3.5, 2.5, 1]}
     />
   );
 };
