@@ -10,7 +10,7 @@ import '../Model/Model.css';
 gsap.registerPlugin(ScrollTrigger);
 
 const Model = ({ isMobile }) => {
-  const gltf = useLoader(GLTFLoader, '/3dmodel.glb');
+  const gltf = useLoader(GLTFLoader, '3dmodel.glb');
   const mixer = useRef();
   const bone3 = useRef(); // Reference for Bone3
 

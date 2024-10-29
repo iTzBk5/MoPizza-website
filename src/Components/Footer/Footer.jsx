@@ -4,6 +4,7 @@ import footer_logo from '../Assets/main-logo.png';
 import instgram_icon from '../Assets/tiktok.png';
 import pintester_icon from '../Assets/facebook.png'; // Fixed incorrect icon path
 import whatsapp_icon from '../Assets/instgram.png'; // Fixed incorrect icon path
+import { Link } from 'react-router-dom'; // Import Link for routing
 
 export const Footer = () => {
   return (
@@ -14,13 +15,13 @@ export const Footer = () => {
       </div>
       <ul className='footer-links'>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link> {/* Use Link for navigation */}
         </li>
         <li>
-          <a href="/franchise">Franchise</a>
+          <Link to="/franchise">Franchise</Link> {/* Use Link for navigation */}
         </li>
         <li>
-          <a href="/game">Game</a>
+          <Link to="/game">Game</Link> {/* Use Link for navigation */}
         </li>
       </ul>
       

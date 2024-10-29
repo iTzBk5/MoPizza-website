@@ -8,7 +8,7 @@ import Game from './Components/Game/Game';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/MoPizza-website/">
       <div id="root">
         <Navbar className="navbar" />
         <div className="main-content">
