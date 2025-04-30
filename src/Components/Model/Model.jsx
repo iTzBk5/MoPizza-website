@@ -36,7 +36,7 @@ const Model = ({ isMobile }) => {
       scrollTrigger: {
         trigger: ".model-container", // Target the model container for scroll
         start: "top top",  // Start from the top of the viewport
-        end: "bottom+=3500 top",  // End the animation at 3000px scroll
+        end: "bottom+=4500 top",  // End the animation at 3000px scroll
         scrub: 1,  // Smooth transition as the user scrolls
         pin: true, // Pin the canvas in place during the scroll
       },
@@ -104,7 +104,29 @@ const Model = ({ isMobile }) => {
       x: Math.PI / 100,
       y: Math.PI / 1.5,
       duration: 1.5,
-    }, ">")
+    }, ">");
+
+    scrollAnimations.to(gltf.scene.position, {
+      x: isMobile ? -5 : -9,
+      y: isMobile ? 3 : 7.5,
+      z: isMobile ? 2 : 0,
+      duration: 1,
+    }, "5.5").to(gltf.scene.position, {
+      x: isMobile ? -1.5 : -10,
+      y: isMobile ? 2 : 4.5,
+      z: isMobile ? 1 : 0,
+      duration: 1,
+    }, "2.8").to(gltf.scene.scale, {
+      x: isMobile ? 0.5 : 1,
+      y: isMobile ? 0.5 : 1,
+      z: isMobile ? 0.5 : 1,
+      duration: 1,
+    }, "2.8").to(gltf.scene.rotation, {
+      z: Math.PI / 100,
+      x: Math.PI / 10000,
+      y: Math.PI / 1.5,
+      duration: 1.5,
+    }, ">");
 
   }, [gltf, isMobile]);
 

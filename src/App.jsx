@@ -32,7 +32,6 @@ function App() {
                 <Route path='/Game' element={<Game />} />
               </Routes>
             </div>
-            <Footer className="footer" />
           </>
         )}
       </div>

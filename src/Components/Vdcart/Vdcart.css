@@ -1,0 +1,106 @@
+
+.view {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  perspective: 9000px;
+  margin-left: 150vh;
+}
+
+  .block {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    margin-top: 150vh ;
+
+  }
+  
+  
+  
+  
+  .block:nth-child(2) {
+    background: rgb(26, 84, 207);
+  }
+  .block:nth-child(3) {
+    background: rgb(36, 217, 127);
+  }
+  .block:nth-child(4) {
+    background: rgb(157, 86, 247);
+    width: 700px;
+  }
+  .block:nth-child(5) {
+    background: rgb(250, 201, 82);
+  }
+  .block:nth-child(6) {
+    background: rgb(26, 84, 207);
+  }
+  .block:nth-child(7) {
+    background: rgb(157, 86, 247);
+  }
+  .block:nth-child(8) {
+    background: rgb(36, 217, 127);
+    width: 700px;
+  }
+  .block:nth-child(9) {
+    background: rgb(232, 88, 67);
+  }
+  .block:nth-child(10) {
+    background: rgb(250, 201, 82);
+    width: 700px;
+  }
+  .block:nth-child(11) {
+    background: rgb(26, 84, 207);
+  }
+  .block:nth-child(12) {
+    background: rgb(36, 217, 127);
+  }
+  .block:nth-child(13) {
+    background: rgb(157, 86, 247);
+  }
+  .block:nth-child(14) {
+    background: rgb(250, 201, 82);
+  }
+  .block:nth-child(15) {
+    background: rgb(232, 88, 67);
+  }
+  .block:nth-child(16) {
+    background: rgb(36, 217, 127);
+    width: 700px;
+  }
+  .block:nth-child(17) {
+    background: rgb(157, 86, 247);
+  }
+  .block:nth-child(18) {
+    background: rgb(26, 84, 207);
+  }
+  .block:nth-child(19) {
+    background: rgb(250, 201, 82);
+  }
+  .block:nth-child(20) {
+    background: rgb(232, 88, 67);
+    width: 700px;
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+      transform: rotateY(30deg) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+      transform: rotateY(0deg) scale(1);
+    }
+  }
+
+  .block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }

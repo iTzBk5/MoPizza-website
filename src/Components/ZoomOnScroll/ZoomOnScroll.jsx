@@ -110,62 +110,6 @@ const ZoomOnScroll = () => {
 
   return (
     <div className="relative h-[400vh] w-full overflow-hidden">
-      <div
-        className="absolute inset-0   z-10 "
-        style={{
-          backgroundImage: `url(${moPizzaBackground})`,
-          backgroundSize: '60% 50%',
-          backgroundPosition: '0% 0%',
-          backgroundRepeat:'no-repeat'
-        }}
-      />
-      <div
-        className="absolute inset-0 z-10 sm:hidden" // Hidden on small screens
-        style={{
-          backgroundImage: `url(${moPizzaBackground})`,
-          backgroundSize: '115% 50%', // adjusted size for mobile
-          backgroundPosition: '50% 0%',
-          backgroundRepeat: 'no-repeat',
-        }}
-      />
-
-      <div
-        className="absolute inset-0 z-10"
-        style={{
-          backgroundImage: `url(${moPizzaBackground2})`,
-          backgroundSize: '60% 50%',
-          backgroundPosition: '100% 100%',
-          backgroundRepeat: 'no-repeat',
-        }}
-      />
-      <div
-        className="absolute inset-0 z-10 sm:hidden"
-        style={{
-          backgroundImage: `url(${moPizzaBackground2})`,
-          backgroundSize: '120% 50%', // adjusted size for mobile
-          backgroundPosition: '90% 100%',
-          backgroundRepeat: 'no-repeat',
-        }}
-      />
-
-      <div
-        className="absolute inset-0   z-9 max-sm:hidden"
-        style={{
-          backgroundColor: '#ea8a4e',
-          backgroundImage: `url(${Background1})`,
-          backgroundBlendMode: 'multiply',
-          backgroundSize: '40% 30%',
-          backgroundPosition: '100% 0%',
-        }}
-      />
-      <div
-        className="absolute inset-0   z-9 sm:hidden"
-        style={{
-          backgroundColor: '#ea8a4e',
-          backgroundSize: '40% 30%',
-          backgroundPosition: '100% 0%',
-        }}
-      />
 
       <div
         ref={bgRef}
@@ -212,7 +156,7 @@ const ZoomOnScroll = () => {
         <div
           ref={garlicRef}
           className="absolute sm:w-[20vh] sm:h-[20vh] w-[0vh] h-[0vh] "
-          style={{ top: '-5%', left: '50%', transform: 'translate(-50%, -50%)', scale: '50% 50%' }}
+          style={{ top: '-1%', left: '50%', transform: 'translate(-50%, -50%)', scale: '50% 50%' }}
         >
           <img src={garlic1} alt="Parallax" className="w-full h-full object-cover" />
         </div>
@@ -235,8 +179,8 @@ const ZoomOnScroll = () => {
 
         <div
           ref={leavesRef}
-          className="absolute sm:w-[25vh] sm:h-[30vh] w-[20vh] h-[10vh] "
-          style={{ top: '70%', left: '10%', transform: 'translate(-50%, -50%)', scale: '50% 50%' }}
+          className="absolute sm:w-[40vh] sm:h-[30vh] w-[20vh] h-[10vh] "
+          style={{ top: '50%', left: '10%', transform: 'translate(-50%, -50%)', scale: '50% 50%' }}
         >
           <img src={leaves} alt="Parallax" className="w-full h-full object-cover" />
         </div>
@@ -251,8 +195,8 @@ const ZoomOnScroll = () => {
 
         <div
           ref={olivesRef}
-          className="absolute sm:w-[25vh] sm:h-[30vh] w-[20vh] h-[20vh] "
-          style={{ top: '80%', left: '40%', transform: 'translate(-50%, -50%)', scale: '60% 60%' }}
+          className="absolute sm:w-[35vh] sm:h-[30vh] w-[20vh] h-[20vh] "
+          style={{ top: '70%', left: '40%', transform: 'translate(-50%, -50%)', scale: '60% 60%' }}
         >
           <img src={olives} alt="Parallax" className="w-full h-full object-cover" />
         </div>

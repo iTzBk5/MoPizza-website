@@ -11,8 +11,8 @@ export const Hero = () => {
              <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
           
           {/* New background elements (fixed) */}
-             <div className="fixed top-0 -z-10 h-full w-full bg-white">
-                <div className="fixed top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_100%_70%_at_60%_-50%,rgba(248,134,75,255),rgba(255,255,255,0))]"></div>
+             <div className="absolute top-0 -z-10 h-full w-full bg-white">
+                <div className=" top-0 z-[-2] h-screen  bg-white bg-[radial-gradient(ellipse_100%_70%_at_60%_-50%,rgba(248,134,75,255),rgba(255,255,255,0))]"></div>
                 
              </div>
              
@@ -33,12 +33,12 @@ export const Hero = () => {
                     
                 </div>
                 <div className="buttons flex justify-start ml-[65px] sm:ml-[260px] mt-4 z-50">
-                    <button className="z-50 bg-[#fbca1f] font-bold text-lg sm:text-xl font-inherit px-6 py-3 border-2 border-black rounded-md shadow-md transition-transform duration-100 ease-in-out hover:translate-x-[-0.1rem] hover:translate-y-[-0.1rem] hover:shadow-lg active:translate-x-[0.1rem] active:translate-y-[0.1rem] active:shadow-sm ml-5"
+                    <button className="z-40 bg-[#fbca1f] font-bold text-lg sm:text-xl font-inherit px-6 py-3 border-2 border-black rounded-md shadow-md transition-transform duration-100 ease-in-out hover:translate-x-[-0.1rem] hover:translate-y-[-0.1rem] hover:shadow-lg active:translate-x-[0.1rem] active:translate-y-[0.1rem] active:shadow-sm ml-5"
                     onClick={() => navigate('/franchise')}
                     >
                         Franchise
                     </button>
-                    <button className="z-50 bg-[#ffffff] font-bold text-lg sm:text-xl font-inherit px-6 py-3 border-1 border-black rounded-md shadow-md transition-transform duration-100 ease-in-out hover:translate-x-[-0.1rem] hover:translate-y-[-0.1rem] hover:shadow-lg active:translate-x-[0.1rem] active:translate-y-[0.1rem] active:shadow-sm ml-5"
+                    <button className="z-40 bg-[#ffffff] font-bold text-lg sm:text-xl font-inherit px-6 py-3 border-1 border-black rounded-md shadow-md transition-transform duration-100 ease-in-out hover:translate-x-[-0.1rem] hover:translate-y-[-0.1rem] hover:shadow-lg active:translate-x-[0.1rem] active:translate-y-[0.1rem] active:shadow-sm ml-5"
                     onClick={() => navigate('/game')}
                     >
                         Game
